@@ -281,8 +281,8 @@ section.services {
     border: 1px solid var(--clients-border-color);
     border-radius: 4px;
 }
-.clients.list a:hover, .clients.list a:focus {fill: #2196F3; 
-border-color: var(--accent-colore);}
+.clients.list a:hover, .clients.list a:focus {border-color: var(--accent-colore);}
+.clients.list a:hover, .clients.list a:focus .clients .icon {fill: var(--accent-colore);}
 .clients.list .item + .item {
     margin-left: 30px;
 }
@@ -376,6 +376,7 @@ footer {
     display: flex;
     align-items: baseline;
 }
+.actionsosial {margin-left: 70px;}
 .action {
     margin-bottom: 20px;
     color: var(--white-colore);
@@ -385,5 +386,6 @@ footer {
     letter-spacing: 0.03em; 
     text-transform: uppercase;
 }
+.actionsosial .icon {fill: var(--white-colore);}
 .actionsosial .link {background-color: rgba(255, 255, 255, 0.1);}
-.actionsosial .link:hover, .actionsosial .link:focus {background-color: var(--accent-colore);}
+.actionsosial .link:hover, footer.actionsosial .link:focus {background-color: var(--accent-colore);}
