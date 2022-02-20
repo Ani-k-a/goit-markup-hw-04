@@ -160,7 +160,9 @@ section {
     overflow: hidden;
 }
 .features.list .image {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 120px;
     width: 270px;
     margin-bottom: 30px;
@@ -244,7 +246,11 @@ section.services {
     text-align: center;
     display: flex;
 }
-.social.list .item {
+.social.list a {display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
     background-color: var(--white-colore);
     border-radius: 50%;
 }
@@ -253,12 +259,15 @@ section.services {
 .clients {
     background-color: var(--backgroud-light-colore);
 }
-.clients.list {
+.clients.list {margin-top:auto;
     justify-content: space-between;
     text-align: center;
     display: flex;
 }
-.clients.list .item {
+.clients.list a {display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
     height: 92px;
     width: 170px;
     content: '';
@@ -266,7 +275,6 @@ section.services {
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid var(--clients-border-color);
-    box-sizing: border-box;
     border-radius: 4px;
 }
 .clients .icon {text-align: center;}
@@ -374,8 +382,4 @@ footer {
     letter-spacing: 0.03em; 
     text-transform: uppercase;
 }
-.social.list .item {display: block;
-    width: 44px;
-    height: 44px;
-    }
-.action .item {background-color: rgba(255, 255, 255, 0.1);}
+.action .link {background-color: rgba(255, 255, 255, 0.1);}
