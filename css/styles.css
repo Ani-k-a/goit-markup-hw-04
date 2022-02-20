@@ -159,14 +159,14 @@ section {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-/* .features.list .image {
+.features.list .image {
     display: block;
     height: 120px;
     width: 270px;
     margin-bottom: 30px;
     background-color: var(--backgroud-light-colore);
     border-radius: 4px;
-} */
+}
 .features.list {
     display: flex;
     margin: 0;
@@ -269,15 +269,8 @@ section.services {
     box-sizing: border-box;
     border-radius: 4px;
 }
-/* .clients .item {
-    display: inline-block;
-    content: '';
-    height: 270px;
-    background-color: #2196F3;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-} */
+.clients .icon {text-align: center;}
+
 
 .clients.list .item + .item {
     margin-left: 30px;
