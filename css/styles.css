@@ -69,6 +69,7 @@ header .container {display: flex;
     text-decoration: none;}
 .contacts a:hover, .contacts a:focus {color: var(--accent-colore);}
 .contacts a:hover, .contacts a:focus  .contacts.item {fill: var(--accent-colore);}
+.contacts.list .icon {margin-right: 10px;}
 .item.mailtop, .item.phonetop {display: flex;
     align-items: center;}
 section {
@@ -144,10 +145,10 @@ section {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.features.list .image {
+ .image.box {
     position: relative;
     object-fit: none;
-    display: block;
+    display: flexbox;
     align-items: center;
     justify-content: center;
     height: 120px;
@@ -156,6 +157,10 @@ section {
     background-color: var(--backgroud-light-colore);
     border-radius: 4px;
 
+}
+.image.box .image {display: block;
+    align-items: center;
+    margin: auto;
 }
 .features.list {
     display: flex;
@@ -180,9 +185,6 @@ section {
     line-height: 1.5;
 }
 .services {background-color:var(--white-colore);}
-
-
-
 section.services {
     padding-top: 0;
 }
@@ -238,7 +240,7 @@ section.services {
     text-align: center;
     display: flex;
 }
-.social .link {display: flex;
+.social a {display: flex;
     align-items: center;
     justify-content: center;
     width: 44px;
