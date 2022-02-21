@@ -59,10 +59,12 @@ header .container {display: flex;
 .site-nav .current {color: var(--accent-colore);}
 .contacts {display: flex;}
 .contacts .item + .item {margin-left: 50px;}
+.contacts.list {color: var(--light-text-colore);
+    fill: var(--light-text-colore);}
 .contacts a {
+    color: currentColor;
     display: inline-flex;
     align-items: center;
-    color: var(--light-text-colore);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -71,8 +73,8 @@ header .container {display: flex;
 .item.mailtop, .item.phonetop {display: flex;
         align-items: center;}
 .contacts.list .icon {margin-right: 10px;
-fill: currentColor;}
-.contacts a:hover, .contacts a:focus {color: var(--accent-colore);
+    fill: currentColor;}
+.contacts li:hover, .contacts li:focus {color: var(--accent-colore);
     fill: var(--accent-colore);;}
 section {
     padding-top: 100px;
