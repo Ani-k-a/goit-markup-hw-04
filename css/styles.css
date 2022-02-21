@@ -262,7 +262,8 @@ section.services {
     text-align: center;
     display: flex;
 }
-.clients.list a {display: flex;
+.clients.list a {fill: var(--clients-border-color);
+    display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
@@ -275,12 +276,13 @@ section.services {
     border: 1px solid var(--clients-border-color);
     border-radius: 4px;
 }
-.clients.list a:hover, .clients.list a:focus {border-color: var(--accent-colore); fill: var(--accent-colore);}
+.clients.list a:hover, .clients.list a:focus {
+    border-color: var(--accent-colore); 
+    fill: var(--accent-colore);
+}
 .clients.list .item + .item {
     margin-left: 30px;
 }
-.clients.list .icon {fill: var(--clients-border-color)}
-
 .portfolio {
     background-color: var(--white-colore);
 }
