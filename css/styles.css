@@ -389,4 +389,6 @@ footer .action {margin-top: 0;
 }
 .actionsosial .icon {fill: var(--white-colore);}
 .actionsosial .link {background-color: rgba(255, 255, 255, 0.1);}
-.actionsosial .link:hover, footer.actionsosial .link:focus {background-color: var(--accent-colore);}
+.actionsosial .link:hover, footer.actionsosial .link:focus {
+    background-color: var(--accent-colore);
+}
