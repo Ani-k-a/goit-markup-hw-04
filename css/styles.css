@@ -11,6 +11,7 @@
     --hero-background-color: #C4C4C4;
     --hero-overlay-colore: rgba(47, 48, 58, 0.4);
     --clients-border-color: #AFB1B8;
+    --social-link-color: #afb1bb;
 }
 html {box-sizing: border-box;}
 *,
@@ -69,7 +70,8 @@ header .container {display: flex;
     text-decoration: none;}
 .item.mailtop, .item.phonetop {display: flex;
         align-items: center;}
-.contacts.list .icon {margin-right: 10px;}
+.contacts.list .icon {margin-right: 10px;
+fill: currentColor;}
 .contacts a:hover, .contacts a:focus {color: var(--accent-colore);
     fill: var(--accent-colore);;}
 section {
@@ -239,7 +241,8 @@ section.services {
     justify-content: center;
     display: flex;
 }
-.social a {display: flex;
+.social a {fill: var(--social-link-color);
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 44px;
@@ -276,6 +279,8 @@ section.services {
 .clients.list .item + .item {
     margin-left: 30px;
 }
+.clients.list .icon {fill: var(--clients-border-color)}
+
 .portfolio {
     background-color: var(--white-colore);
 }
